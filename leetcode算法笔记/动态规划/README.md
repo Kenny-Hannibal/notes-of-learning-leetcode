@@ -231,7 +231,7 @@ def max_cake_price(n, price_list):
     return dp[n]
 ```
 
-如下图所示，为动态规划求解 f(4)f(4) 的迭代流程，其是转移方程 $f(n) = \max_{0 \leq i < n} (f(i) + p(n - i))$的体现。
+如下图所示，为动态规划求解 $f(4)$ 的迭代流程，其是转移方程 $f(n) = \max_{0 \leq i < n} (f(i) + p(n - i))$的体现。
 ![picture6](images/Picture6.png)
 
 ### 示例小结
@@ -254,7 +254,7 @@ def max_cake_price(n, price_list):
 
 * 状态定义：一维 $dp$ 列表，设重量为 $i$ 蛋糕的售价为 $p(i)$ ，重量为 $i$ 蛋糕切分后的最高售价为 $dp[i]$ ；
 * 初始状态：已知重量为 0 蛋糕的最高售价为 0 ，重量为 1 的蛋糕最高售价为 $p(1)$ ；
-* 转移方程：$dp[n]$ 为 $n$ 种切分组合中的最高售价组合，即
+* 转移方程： $dp[n]$ 为 $n$ 种切分组合中的最高售价组合，即
 
 $$
 dp[n] = \max_{0 \leq i < n} (dp[i] + p(n - i))
