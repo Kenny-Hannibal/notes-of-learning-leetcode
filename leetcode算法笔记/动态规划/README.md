@@ -106,6 +106,7 @@ def fibonacci_memorized(n):
 ```
 
 如下图所示，应用记忆化递归方法后，递归树中绝大部分节点被剪枝。此时，`fibonacci()` 函数的调用次数从 $O(2^n)$ 指数级别降低至 $O(n)$ 线性级别，时间复杂度大大降低。
+
 ![picture2](images/Picture2.png)
 
 ### 方法三：动态规划
