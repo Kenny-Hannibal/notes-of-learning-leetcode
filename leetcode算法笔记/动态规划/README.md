@@ -60,7 +60,6 @@ def fibonacci(n):
     if n == 1: return 1 # 返回 f(1)
     return fibonacci(n - 1) + fibonacci(n - 2) # 分解为两个子问题求解
 ```
-
 ![picture1](images/Picture1.png)
 
 如上图所示，为暴力递归求斐波那契数 $f(5)$ 形成的二叉树，树中的每个节点代表着执行了一次 `fibonacci() `函数，且有：
